@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just For You RimJhim❤</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #a18cd1); animation: bgMove 8s ease infinite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #333;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      max-width: 420px;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: #ff5f7e;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    button {
+      background: #ff5f7e;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    .heart {
+      font-size: 2rem;
+      animation: beat 1.2s infinite;
+      display: inline-block;
+    }
+
+    @keyframes beat {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.25) rotate(5deg); }
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+      50% { transform: scale(1.2); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px) scale(0.95); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card" style="animation: fadeIn 1.5s ease, float 3s ease-in-out infinite;">
+    <h1>Hey RimJhim <span class="heart">❤</span></h1>
+    <p>
+      Just to remind you how special you are.
+      You make my days brighter and smiles easier.
+    </p>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="message" style="margin-top:20px; font-weight:600; color:#ff5f7e;"></p>
+    <p style="margin-top:25px; font-size:0.95rem; color:#555;">
+      No matter where life goes, you matter more than you know 💖 My Chulbuli
+    </p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').innerText =
+        "Please come to the party tomorrow, Chup Chap se aa jana bata rahe hai 💐 Yours loving uncle";
+    }
+  </script>
+</body>
+</html>
